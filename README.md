@@ -1,3 +1,3 @@
-# Open Science issues
+# INSPIRE issues
 
-This repository holds isues for the [Open Science project board](https://github.com/orgs/cern-sis/projects/4).
+This repository holds INSPIRE issues for the [Github board](https://github.com/orgs/cern-sis/projects/1).
