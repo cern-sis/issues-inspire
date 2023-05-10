@@ -20,4 +20,3 @@ jobs:
         with:
           project-url: https://github.com/orgs/cern-sis/projects/1
           github-token: ${{ secrets.CERN_SIS_BOT_PAT }}
-          labeled: new
