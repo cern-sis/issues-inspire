@@ -1,0 +1,19 @@
+name: Move from In Progress to Review
+
+on:
+  issues:
+    types:
+      - labeled
+
+jobs:
+  add-comment:
+    if: github.event.label.name == 'ready-for-review' # Verifier le nom du label
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: peter-evans/create-or-update-comment@5f728c3dae25f329afbe34ee4d08eef25569d79f # Verifier l'action
+        with:
+          project: INSPIRE Board
+          column: Review
+          github-token: ${{ secrets.CERN_SIS_BOT_PAT }} # A verifier
