@@ -15,4 +15,4 @@ jobs:
           project-url: https://github.com/orgs/cern-sis/projects/1/views/13
           column-name: "Review"
           label-name: "ready-to-review"
-          colums-to-ignore: "On hold, Todo, QA, Ready to Deploy, PROD, Done"
+
