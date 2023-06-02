@@ -12,7 +12,7 @@ jobs:
       - uses: konradpabjan/move-labeled-or-milestoned-issue@v2.0
         with:
           action-token: ${{ secrets.CERN_SIS_BOT_PAT }} 
-          project-url: https://github.com/orgs/cern-sis/projects/1/views/13
+          project-url: https://github.com/orgs/cern-sis/projects/1
           column-name: "Review"
           label-name: "ready-to-review"
-          colums-to-ignore: "On hold, Todo, QA, Ready to Deploy, PROD, Done"
+
