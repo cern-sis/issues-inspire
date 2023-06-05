@@ -1,0 +1,18 @@
+name: Move from Review to In Progress
+
+on:
+  issues:
+    types:
+      - unlabeled
+
+jobs:
+  add-comment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dessant/label-actions@v3
+        with:
+          action-token: ${{ secrets.CERN_SIS_BOT_PAT }} 
+          project-url: https://github.com/orgs/cern-sis/projects/1
+          column-name: "In Progress" 
+          label-name: "ready-to-review" 
+
